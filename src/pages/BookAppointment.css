@@ -1,0 +1,90 @@
+.appointment-wrapper {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.appointment-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #3b2a2a;
+  margin-bottom: 10px;
+}
+
+.appointment-subtext {
+  text-align: center;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+  animation: fadeUp 0.7s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #b76e79;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service-card p {
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.bridal {
+  background: linear-gradient(135deg, #fff0f5, #ffe4ea);
+}
+
+.book-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.book-now-btn {
+  background: linear-gradient(135deg, #b76e79, #f3b7c2);
+  color: white;
+  padding: 14px 45px;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.book-now-btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
